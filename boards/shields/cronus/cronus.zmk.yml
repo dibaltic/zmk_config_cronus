@@ -1,6 +1,6 @@
 file_format: "1"
 id: cronus
-name: Cronus
+name: cronus
 type: shield
 url: https://github.com/dibaltic/zmk_config_cronus
 requires: [pro_micro]
