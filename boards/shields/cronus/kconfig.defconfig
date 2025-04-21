@@ -2,7 +2,7 @@ if SHIELD_CRONUS_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "Cronus"
+    default "cronus"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
