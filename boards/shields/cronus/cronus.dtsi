@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "cronus_layouts.dtsi"
+#include "cronus-layouts.dtsi"
 
 / {
     chosen {
