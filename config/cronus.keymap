@@ -43,9 +43,9 @@
     };
 
     behaviors {
-         tp_repeat_mo: tp_repeat_mo {
+         repeat_mo: repeat_mo {
          compatible = "zmk,behavior-hold-tap";
-         label = "TP_REPEAT_MO";
+         label = "REPEAT_MO";
          flavor = "tap-preferred";
          #binding-cells = <2>;
          tapping-term-ms = <250>;
@@ -55,9 +55,9 @@
 };
 
     behaviors {
-         magic_shift: magic_shift {
+         layer_shift: layer_shift {
          compatible = "zmk,behavior-hold-tap";
-         label = "magic_shift";
+         label = "layer_shift";
          flavor = "tap-preferred";
          #binding-cells = <2>;
          tapping-term-ms = <280>;
@@ -234,7 +234,7 @@
 &kp X  &kp C  &kp L  &kp F   &kp P     &kp K   &kp Y   &kp O    &kp U      &kp APOS
 &kp R  &kp S  &kp N  &kp T   &kp B     &kp J   &kp H   &kp E    &kp I      &kp A
        &kp W  &kp M  &kp G                     &kp D   &kp DOT  &kp COMMA
-       &layer_enter 1 ENTER  &lt 3 SPACE    &tp_repeat_mo 2 0  &magic_shift 4 RSHIFT
+       &layer_enter 1 ENTER  &lt 3 SPACE    &repeat_mo 2 0  &layer_shift 4 RSHIFT
             >;
         };
 
