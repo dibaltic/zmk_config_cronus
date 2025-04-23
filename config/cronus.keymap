@@ -67,14 +67,14 @@
 };
 
     behaviors {
-         layer_sk: layer_sk {
+         layer_sl: layer_sl {
          compatible = "zmk,behavior-hold-tap";
-         label = "layer_sk";
+         label = "layer_sl";
          flavor = "tap-preferred";
          #binding-cells = <2>;
          tapping-term-ms = <200>;
          require-prior-idle-ms = <200>;
-         bindings = <&mo>, <&sk>;
+         bindings = <&mo>, <&sl>;
        };
 };
 
@@ -252,7 +252,7 @@
 &kp X  &kp C  &kp L  &kp F   &kp P     &kp K   &kp Y   &kp O    &kp U      &kp APOS
 &kp R  &kp S  &kp N  &kp T   &kp B     &kp J   &kp H   &kp E    &kp I      &kp A
        &kp W  &kp M  &kp G                     &kp D   &kp DOT  &kp COMMA
-       &layer_sk 5 1  &lt 3 SPACE    &repeat_mo 2 0  &layer_shift 4 RSHIFT
+       &layer_sl 5 1  &lt 3 SPACE    &repeat_mo 2 0  &layer_shift 4 RSHIFT
             >;
         };
 
