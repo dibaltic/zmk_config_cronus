@@ -78,7 +78,6 @@
        };
 };
 
-    
     combos {
         compatible = "zmk,combos";
 
@@ -257,6 +256,13 @@
             layers = <6>;
         };
 
+        game_ext {
+            require-prior-idle-ms = <125>;
+            bindings = <&sl 7>;
+            key-positions = <20 21>;
+            layers = <6>;
+        };
+
         Reset {
             require-prior-idle-ms = <125>;
             bindings = <&bootloader>;
@@ -271,7 +277,6 @@
             layers = <5>;
         };
     };
-
 
     keymap {
         compatible = "zmk,keymap";
@@ -325,7 +330,7 @@ HRML(R,    S,     N,    T)   &kp B     &kp J   HRMR( H,   E,       I,     A)
             bindings = <
 &kp LA(LC(TAB))  &kp LC(X)    &kp LC(Z)        &kp LC(Y)    &kp C_VOLUME_UP      &none   &none   &none  &none  &none
 &kp LG(L)        &kp LC(F)    &kp LC(C)        &kp LC(V)    &kp C_VOLUME_DOWN    &none   &none   &none  &none  &none
-                 &kp LC(TAB)  &kp LC(LS(TAB))  &kp LC(TAB)                               &none   &none  &none
+                 &kp LC(LS(DOWN_ARROW))  &kp LC(LS(TAB))  &kp LC(TAB)                               &none   &none  &none
                                                &trans       &trans               &trans  &trans
             >;
         };
@@ -336,6 +341,15 @@ HRML(R,    S,     N,    T)   &kp B     &kp J   HRMR( H,   E,       I,     A)
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F        &kp H  &kp J  &kp K  &kp L            &kp PRINTSCREEN
                 &kp Z  &kp X  &kp C                          &kp N  &kp M  &kp LA(LC(TAB))
                               &kp LCTRL  &kp SPACE    &none  &to 0
+            >;
+        };
+
+        game_ext {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4    &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&kp N1  &kp N2  &kp N3  &kp N4    &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+        &none   &trans  &kp LALT                    &trans  &trans  &trans
+                        &trans    &trans    &trans  &trans
             >;
         };
     };
