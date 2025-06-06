@@ -9,4 +9,4 @@ Alternatively, to use my keymap as it is you can download the firmware from the 
 ## Keymap Reference
 It is based on the [bird layout](https://github.com/jcmkk3/bird-layout)
 
-![Cronus](https://github.com/user-attachments/assets/e7d0d2f4-249f-4919-b824-79b39f785a12)
+![ZMK Cronus](https://github.com/user-attachments/assets/45ceeae1-01c1-4e79-a5a7-f66dc260896f)
